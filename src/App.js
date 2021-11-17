@@ -8,11 +8,22 @@ import {
   HeaderTitle,
   HeaderText,
   HeaderButton,
-  HeaderContainerImg,
   HeaderImage,
   Main,
   Footer,
   MainHeaderContainer,
+  MainContainer,
+  Card,
+  CardHeader,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  FooterContainer,
+  FooterTitle,
+  Form,
+  Input,
+  InputTextArea,
+  ButtonForm,
 } from "./AppStyle";
 
 export function App() {
@@ -29,13 +40,79 @@ export function App() {
               </HeaderText>
               <HeaderButton>Botão</HeaderButton>
             </HeaderContainer>
-            <HeaderContainerImg>
-              <HeaderImage src={LogoImage} />
-            </HeaderContainerImg>
+            <HeaderImage src={LogoImage} />
           </MainHeaderContainer>
         </Header>
-        <Main></Main>
-        <Footer></Footer>
+        <Main>
+          <MainContainer>
+            <Card>
+              <CardHeader />
+              <CardBody>
+                <CardTitle>Título do card</CardTitle>
+                <CardSubtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.
+                </CardSubtitle>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardHeader />
+              <CardBody>
+                <CardTitle>Título do card</CardTitle>
+                <CardSubtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.
+                </CardSubtitle>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardHeader />
+              <CardBody>
+                <CardTitle>Título do card</CardTitle>
+                <CardSubtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.
+                </CardSubtitle>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardHeader />
+              <CardBody>
+                <CardTitle>Título do card</CardTitle>
+                <CardSubtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.
+                </CardSubtitle>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardHeader />
+              <CardBody>
+                <CardTitle>Título do card</CardTitle>
+                <CardSubtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.
+                </CardSubtitle>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardHeader />
+              <CardBody>
+                <CardTitle>Título do card</CardTitle>
+                <CardSubtitle>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque et nisl.
+                </CardSubtitle>
+              </CardBody>
+            </Card>
+          </MainContainer>
+        </Main>
+        <Footer>
+          <FooterContainer>
+            <FooterTitle>Entre em contato</FooterTitle>
+            <Form>
+              <Input placeholder="Nome" />
+              <Input placeholder="E-mail" />
+              <Input placeholder="Telefone" />
+              <InputTextArea placeholder="Mensagem..." />
+            </Form>
+            <ButtonForm>Enviar mensagem</ButtonForm>
+          </FooterContainer>
+        </Footer>
       </Container>
     </Theme>
   );
